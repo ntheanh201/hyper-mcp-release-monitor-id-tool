@@ -1,6 +1,10 @@
 # Release Monitor ID Tool
 
-A tool that retrieves project IDs from release-monitoring.org.
+A [hyper-mcp](https://github.com/tuananh/hyper-mcp) plugin that retrieves project ID from release-monitoring.org.
+
+<p align="center">
+  <img src="./assets/release-monitor.png" style="height: 300px;">
+</p>
 
 ## Usage
 
