@@ -21,8 +21,6 @@ pub(crate) fn call(input: CallToolRequest) -> Result<CallToolResult, Error> {
     let response = http::request::<Vec<u8>>(&request, None)
         .map_err(|e| Error::msg(format!("Failed to make HTTP request: {}", e)))?;
 
-    println!("Response status: {}", response.status());
-
     let text = String::from_utf8(response.body().to_vec())
         .map_err(|e| Error::msg(format!("Failed to parse response as UTF-8: {}", e)))?;
 
@@ -48,8 +46,6 @@ pub(crate) fn call(input: CallToolRequest) -> Result<CallToolResult, Error> {
     }
 
     let project = &items[0];
-
-    println!("Project: {:?}", project);
     
     let id = project
         .get("id")
