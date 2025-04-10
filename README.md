@@ -23,7 +23,7 @@ Add the plugin to your hyper-mcp configuration:
       "name": "release-monitor-id",
       "path": "oci://ghcr.io/ntheanh201/release-monitor-id-plugin:latest",
       "runtime_config": {
-        "allowed_host": "release-monitoring.org"
+        "allowed_hosts": ["release-monitoring.org"]
       }
     }
   ]
